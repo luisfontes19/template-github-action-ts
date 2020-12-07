@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "npx nodemon --watch \"src/**/*.ts\" --ignore \"node_modules/**/*\" --exec npx ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pack": "ncc build -m -s src/index.ts"
+    "pack": "ncc build -m src/index.ts"
   },
   "author": "luisfontes@protonmail.com",
   "license": "MIT",
