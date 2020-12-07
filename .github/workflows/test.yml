@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  main_job:
+    runs-on: ubuntu-latest
+    name: Testing the action
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: The Action Name Here
+        uses: ./ # Uses an action in the root directory
+        id: main
+        with:
+          some-input: 'Mona the Octocat'

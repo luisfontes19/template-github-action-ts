@@ -1,0 +1,13 @@
+name: 'Github Action'
+description: 'Some nice name'
+inputs:
+  some-input:  # id of input
+    description: 'Just give us something'
+    required: true
+    default: 'World'
+outputs:
+  output: 
+    description: 'something to output'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
